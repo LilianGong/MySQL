@@ -26,12 +26,13 @@
 <p>CREATE TABLE Ages ( <br>
   name VARCHAR(128), <br>
   age INTEGER <br>
-) <em>creat new tables </em> <br></p>
+)<br> 
+<em>creat new tables </em> <br></p>
 </li>
 
 
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjY2MzcxOV19
+eyJoaXN0b3J5IjpbNzgxODg0Mjk1LDE4NzY2NjM3MTldfQ==
 -->
