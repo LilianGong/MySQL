@@ -23,12 +23,15 @@
 <p>drop database my_database <em>delete database</em> <br></p>
 </li>
 <li>
-<p> <em>delete database</em> <br></p>
+<p>CREATE TABLE Ages ( <br>
+  name VARCHAR(128), <br>
+  age INTEGER <br>
+) <em>creat new tables </em> <br></p>
 </li>
 
 
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjg3MDM4MDNdfQ==
+eyJoaXN0b3J5IjpbMTg3NjY2MzcxOV19
 -->
