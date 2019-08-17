@@ -19,5 +19,14 @@
 <li>
 <p>drop database my_database <em>delete database</em> <br></p>
 </li>
+<li>
+<p>drop database my_database <em>delete database</em> <br></p>
+</li>
+
+
+
 </ul>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTEwNzQ5Njk4XX0=
+-->
