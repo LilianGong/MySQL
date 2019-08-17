@@ -30,11 +30,11 @@
 <em>creat new tables </em> <br></p>
 </li>
 <li>
-<p>INSERT INTO Ages (name, age) VALUES ('Zahra', 34); <em>delete database</em> <br></p>
+<p>INSERT INTO Ages (name, age) VALUES ('Zahra', 34); <em>create new rows in the table</em> <br></p>
 </li>
 
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNzQ4NzgzLDE4NzY2NjM3MTldfQ==
+eyJoaXN0b3J5IjpbLTg3MTI4NDM4NCwxODc2NjYzNzE5XX0=
 -->
