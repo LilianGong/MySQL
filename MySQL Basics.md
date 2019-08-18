@@ -8,7 +8,9 @@
 </blockquote>
 <ul>
 <li>
-<p>mysql -u root -p --&gt; enter password <em>get access to the sql server</em> <br></p>
+<p>mysql -u root -p --&gt; enter password 
+<p>or <p>mysql -u root -p --&gt; enter password --&gt; in mac
+<em>get access to the sql server</em> <br></p>
 </li>
 <li>
 <p>exit / quit <em>exit the sql server</em> <br></p>
@@ -36,5 +38,6 @@
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTI4NDM4NCwxODc2NjYzNzE5XX0=
+eyJoaXN0b3J5IjpbMjEwNDk2MjQwMywtODcxMjg0Mzg0LDE4Nz
+Y2NjM3MTldfQ==
 -->
