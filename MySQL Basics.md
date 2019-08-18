@@ -34,10 +34,13 @@
 <li>
 <p>DELETE FROM Album WHERE album_id = 2; <em>delete rows from table</em> <br></p>
 </li>
+<li>
+<p>SELECT Track.title, Artist.name, Album.title, Genre.name FROM Track JOIN Genre JOIN Album JOIN Artist ON Track.genre_id = Genre.genre_id AND Track.album_id = Album.album_id AND Album.artist_id = Artist.artist_id; <em>how to join </em> <br></p>
+</li>
 
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Nzc4NDU2NiwyMTA0OTYyNDAzLC04Nz
-EyODQzODQsMTg3NjY2MzcxOV19
+eyJoaXN0b3J5IjpbLTIwNzQzNzQyMzMsMTI4Nzc4NDU2NiwyMT
+A0OTYyNDAzLC04NzEyODQzODQsMTg3NjY2MzcxOV19
 -->
