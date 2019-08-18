@@ -22,22 +22,21 @@
 <p>drop database my_database <em>delete database</em> <br></p>
 </li>
 <li>
-<p>drop database my_database <em>delete database</em> <br></p>
-</li>
-<li>
 <p>CREATE TABLE Ages ( <br>
   name VARCHAR(128), <br>
   age INTEGER <br>
-)<br> 
+)EIGINE = InnoDB; <br> 
 <em>creat new tables </em> <br></p>
 </li>
 <li>
 <p>INSERT INTO Ages (name, age) VALUES ('Zahra', 34); <em>create new rows in the table</em> <br></p>
 </li>
-
+<li>
+<p>DELETE FROM Album WHERE album_id = 2; <em>delete rows from table</em> <br></p>
+</li>
 </ul>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDk2MjQwMywtODcxMjg0Mzg0LDE4Nz
-Y2NjM3MTldfQ==
+eyJoaXN0b3J5IjpbLTE1NDQzODY4NCwyMTA0OTYyNDAzLC04Nz
+EyODQzODQsMTg3NjY2MzcxOV19
 -->
