@@ -44,12 +44,12 @@
 <p> alter table Course  change name  title  VARCHAR(128); <em>alter table : change the col name of the table</em> <br></p>
 </li>
 <li>
-<p> delete from User; / truncate table User;<em>delete certain</em> <br></p>
+<p> delete from User; / truncate table User;<em>delete certain table</em> <br></p>
 </li> 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTY1MTU3MCwtMTgxNDU1ODc2OCw2OD
-MwOTg0NDksLTEyNTI1NDI4NjIsMTI4Nzc4NDU2NiwyMTA0OTYy
-NDAzLC04NzEyODQzODQsMTg3NjY2MzcxOV19
+eyJoaXN0b3J5IjpbLTExNDE0NjA1NzYsLTE4MTQ1NTg3NjgsNj
+gzMDk4NDQ5LC0xMjUyNTQyODYyLDEyODc3ODQ1NjYsMjEwNDk2
+MjQwMywtODcxMjg0Mzg0LDE4NzY2NjM3MTldfQ==
 -->
