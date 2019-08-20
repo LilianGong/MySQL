@@ -29,6 +29,26 @@
 <em>creat new tables </em> <br></p>
 </li>
 <li>
+<p>CREATE TABLE Track(
+track_id INTEGER NOT NULL AUTO_INCREMENT,
+title VARCHAR(255),
+len INTEGER,
+rating INTEGER,
+count INTEGER,
+album_id INTEGER,
+genre_id INTEGER,
+
+PRIMARY KEY(track_id),
+
+CONSTRAINT FOREIGN KEY (album_id) REFERENCES Album(album_id)
+ON DELETE CASCADE ON UPDATE CASCADE,
+
+CONSTRAINT FOREIGN KEY (genre_id) REFERENCES Genre(genre_id)
+ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE = InnoDB; <br> 
+<em>creat new table with primary key and foreign keys </em> <br></p>
+</li>
+<li>
 <p>INSERT INTO Ages (name, age) VALUES ('Zahra', 34); <em>create new rows in the table</em> <br></p>
 </li>
 <li>
@@ -49,7 +69,8 @@
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDE0NjA1NzYsLTE4MTQ1NTg3NjgsNj
-gzMDk4NDQ5LC0xMjUyNTQyODYyLDEyODc3ODQ1NjYsMjEwNDk2
-MjQwMywtODcxMjg0Mzg0LDE4NzY2NjM3MTldfQ==
+eyJoaXN0b3J5IjpbMTQzMjM3MjE1MCwtMTE0MTQ2MDU3NiwtMT
+gxNDU1ODc2OCw2ODMwOTg0NDksLTEyNTI1NDI4NjIsMTI4Nzc4
+NDU2NiwyMTA0OTYyNDAzLC04NzEyODQzODQsMTg3NjY2MzcxOV
+19
 -->
