@@ -40,9 +40,12 @@
 <li>
 <p> UPDATE Course SET course_id = 3 WHERE Course.course_id = 4; <em>change the primary key for the table</em> <br></p>
 </li>
+<li>
+<p> alter table Course  change name  title  VARCHAR(128); <em>alter table : change the col name of the table</em> <br></p>
+</li>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMDk4NDQ5LC0xMjUyNTQyODYyLDEyOD
-c3ODQ1NjYsMjEwNDk2MjQwMywtODcxMjg0Mzg0LDE4NzY2NjM3
-MTldfQ==
+eyJoaXN0b3J5IjpbLTE4MTQ1NTg3NjgsNjgzMDk4NDQ5LC0xMj
+UyNTQyODYyLDEyODc3ODQ1NjYsMjEwNDk2MjQwMywtODcxMjg0
+Mzg0LDE4NzY2NjM3MTldfQ==
 -->
