@@ -42,7 +42,13 @@ lead & lag has the same expression.
                    From Numbers 
 
 
-* COUNT  
+* COUNT 
+
+
+* DATEDIFF 
+            
+            DATEDIFF ("2018-01-01","2018-01-02") = -1 
+            DATEDIFF ("2018-01-02","2018-01-01") = 1
 
 
 ### Techniques
