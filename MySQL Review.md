@@ -8,6 +8,10 @@
 
 * DECLARE, SET  
 
+* DATE, DATEDIFF  
+
+
+
 * FUNCTION <BEGIN, RETURN, END>   
 
 * RANK, DENSE_RANK    
@@ -26,6 +30,15 @@
       
      
 * LEFT JOIN, RIGHT JOIN, INNER JOIN, OUTER JOIN  
+ON condition can represent a WHERE clause  
+
+        SELECT w1.id FROM Weather AS w1 
+        INNER JOIN 
+        Weather AS w2
+        ON
+        DATEDIFF (w1.recordDate, w2.recordDate) = 1
+        AND 
+        w1.temperature > w2.temperature
 
 * LEAD, LAG   
 lead - look forward; lag - look backward  
@@ -42,7 +55,33 @@ lead & lag has the same expression.
                    From Numbers 
 
 
-* COUNT  
+* COUNT(IF), COUNT(DISTINCT)
+
+         SELECT class
+         FROM courses c2
+         GROUP BY class
+         HAVING COUNT(DISTINCT(student))>=5
+
+* ROW_NUMBER   
+return the row number of specific partition and group  
+
+        ROW_NUMBER () OVER(
+        PARTITION BY []
+        ORDER BY [])  
+
+* DELETE  
+can be combined with JOIN and achieve removing duplicates
+
+        DELETE p1 FROM 
+        Person p1
+        INNER JOIN Person p2
+        WHERE 
+        p1.Id > p2.Id
+        AND 
+        p1.Email = p2.Email 
+
+* ROUND, CAST  
+
 
 
 ### Techniques
@@ -69,5 +108,32 @@ Here is an example of selecting duplicated emails in the table:
         WHERE ct > 1
 
 
+### Complecated cases
+Calculate the cancellation rate by date from unbanned users   
 
+        SELECT Request_at AS Day, 
+        ROUND((COUNT(`Id`) - COUNT(IF(`Status` = 'completed', 1, NULL)))/COUNT(`Id`),2)
+        AS "Cancellation Rate"
+        FROM 
+            (SELECT Id, `Status`, Request_at FROM 
+                (SELECT *
+                FROM 
+                Trips as t1
+                INNER JOIN 
+                Users as u1
+                ON 
+                u1.Users_Id = t1.Client_Id
+                AND 
+                U1.Banned = "No") AS c1
+            INNER JOIN 
+            Users as u2
+            ON 
+            u2.Users_Id = c1.Driver_Id
+            AND 
+            u2.Banned = "No") AS merged
+        GROUP BY  Request_at
+        HAVING
+        Request_at >="2013-10-01" 
+        AND 
+        Request_at <="2013-10-03" 
 
