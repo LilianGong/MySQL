@@ -54,7 +54,6 @@ lead & lag has the same expression.
                    LEAD(Num) OVER(ORDER BY Id)
                    From Numbers 
 
-
 * COUNT(IF), COUNT(DISTINCT)
 
          SELECT class
@@ -82,6 +81,14 @@ can be combined with JOIN and achieve removing duplicates
 
 * ROUND, CAST  
 
+* COUNT 
+
+
+* DATEDIFF 
+            
+            DATEDIFF ("2018-01-01","2018-01-02") = -1 
+            DATEDIFF ("2018-01-02","2018-01-01") = 1
+>>>>>>> origin
 
 
 ### Techniques
