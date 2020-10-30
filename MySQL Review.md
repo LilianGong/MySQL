@@ -6,7 +6,22 @@
 
 * LIMIT, OFFSET, FETCH  
 
-* DECLARE, SET  
+* DELETE  
+the syntax for delete is exactly the same as SELECT.  
+        
+        DELETE p1.*
+        FROM Person p1,
+            Person p2
+        WHERE
+            p1.Email = p2.Email AND p1.Id > p2.Id
+
+* DECLARE, UPDATE, SET 
+
+        UPDATE [TABLE] SET [COLUMN] = [VALUE]  
+        
+* IF   
+
+        IF(condition, value_if_true, value_if_false)
 
 * DATE, DATEDIFF  
 
@@ -54,6 +69,21 @@ lead & lag has the same expression.
                    LEAD(Num) OVER(ORDER BY Id)
                    From Numbers 
 
+
+
+* COUNT 
+can be used simply as 
+
+        COUNT([])
+        
+      OR: 
+      
+        COUNT([]) OVER (
+        PARTITION BY [] 
+        ORDER BY []
+        )
+
+
 * COUNT(IF), COUNT(DISTINCT)
 
          SELECT class
@@ -79,16 +109,14 @@ can be combined with JOIN and achieve removing duplicates
         AND 
         p1.Email = p2.Email 
 
-* ROUND, CAST  
+* ROUND, CAST, MOD, CEILING, FLOOR
 
-* COUNT 
 
 
 * DATEDIFF 
             
             DATEDIFF ("2018-01-01","2018-01-02") = -1 
             DATEDIFF ("2018-01-02","2018-01-01") = 1
->>>>>>> origin
 
 
 ### Techniques
