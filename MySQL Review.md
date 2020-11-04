@@ -22,12 +22,24 @@ the syntax for delete is exactly the same as SELECT.
 * IF   
 
         IF(condition, value_if_true, value_if_false)
+        
+* CASE    
+used to select specific case and give value   
 
-* DATE, DATEDIFF  
+        CASE WHEN condition THEN value_if_true ELSE value_if_false END   
+
+
+* LIKE, REGEXP_LIKE  
+
+    string pattern matching    
+
+        SELECT mail 
+        FROM Emails 
+        WHERE 
+        REGEXP_LIKE(mail, '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode.com$')  
 
 
 
-* FUNCTION <BEGIN, RETURN, END>   
 
 * RANK, DENSE_RANK    
 
@@ -118,6 +130,8 @@ can be combined with JOIN and achieve removing duplicates
             DATEDIFF ("2018-01-01","2018-01-02") = -1 
             DATEDIFF ("2018-01-02","2018-01-01") = 1
 
+
+* FUNCTION <BEGIN, RETURN, END>   
 
 ### Techniques
 
