@@ -25,12 +25,22 @@ the syntax for delete is exactly the same as SELECT.
         e.g.
         UPDATE salary SET sex = IF(sex='m', 'f', 'm')
         
+        
+* CASE    
+used to select specific case and give value   
 
-* DATE, DATEDIFF  
+        CASE WHEN condition THEN value_if_true ELSE value_if_false END   
 
 
+* LIKE, REGEXP_LIKE  
 
-* FUNCTION <BEGIN, RETURN, END>   
+    string pattern matching    
+
+        SELECT mail 
+        FROM Emails 
+        WHERE 
+        REGEXP_LIKE(mail, '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode.com$')  
+
 
 * RANK, DENSE_RANK    
 
@@ -122,28 +132,7 @@ can be combined with JOIN and achieve removing duplicates
             DATEDIFF ("2018-01-02","2018-01-01") = 1
 
 
-### Techniques
-
-* Multiple Database Instances  
-This technique can be used by creating multiple parallel logs, thus create a way of indexing.      
-            
-            SELECT DISTINCT l1.Num
-            FROM 
-            LOGS l1,
-            LOGS l2
-            WHERE l1.Id = l2.Id -1 
-            AND l1.Num = l2.Num
-
-* Nested SELECT   
-Sometimes we can select from a pre-selected table, but remember in MYSQL the pre-selected table should have an alias.  
-Here is an example of selecting duplicated emails in the table:  
-
-        SELECT Email 
-        FROM 
-        (SELECT Email, COUNT(Email) as ct
-        FROM Person
-        GROUP BY Email) AS grouped
-        WHERE ct > 1
+* FUNCTION <BEGIN, RETURN, END>   
 
 
 ### Complecated cases
