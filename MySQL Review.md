@@ -22,6 +22,9 @@ the syntax for delete is exactly the same as SELECT.
 * IF   
 
         IF(condition, value_if_true, value_if_false)
+        e.g.
+        UPDATE salary SET sex = IF(sex='m', 'f', 'm')
+        
 
 * DATE, DATEDIFF  
 
